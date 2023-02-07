@@ -1,0 +1,40 @@
+object FrmMain: TFrmMain
+  Left = 348
+  Height = 376
+  Top = 135
+  Width = 561
+  Caption = 'FrmMain'
+  ClientHeight = 376
+  ClientWidth = 561
+  OnCreate = FormCreate
+  LCLVersion = '1.9.0.0'
+  object Pnl: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 10
+    Height = 336
+    Top = 10
+    Width = 541
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Left = 10
+    BorderSpacing.Top = 10
+    BorderSpacing.Right = 10
+    BorderSpacing.Bottom = 30
+    Color = clWhite
+    ParentColor = False
+    TabOrder = 0
+    OnClick = PnlClick
+  end
+  object Label1: TLabel
+    Left = 10
+    Height = 13
+    Top = 352
+    Width = 31
+    Caption = 'Label1'
+    ParentColor = False
+  end
+end
